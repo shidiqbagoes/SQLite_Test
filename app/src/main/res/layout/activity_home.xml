@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".HomeAct">
+
+
+
+
+            <com.github.florent37.shapeofview.shapes.ArcView
+                android:id="@+id/arcView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shape_arc_height="13dp"
+                app:shape_arc_position="bottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/bg_home" />
+            </com.github.florent37.shapeofview.shapes.ArcView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Dashboard"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_ln_color"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="30dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/arcView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Main Menus"
+                    android:textColor="#242424"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="Explore the taste of food"
+                    android:textColor="#ACACAC"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#EDEDED" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/btn_bakmie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/bakmie" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Bakmie"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_lumpia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/lumia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Lumpia"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_Bubur"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/bubur" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Bubur"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/btn_capcai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/capcai" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Capcai"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_puiling"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/puiling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Puiling"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_jamur"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/jamur" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Jamur"
+                            android:textColor="#242424"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Recommended Menus"
+                android:textColor="#242424"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserratlight"
+                android:text="More Food Waiting You"
+                android:textColor="#ACACAC"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                    <ImageView
+                        android:layout_width="173dp"
+                        android:layout_height="93dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/ppuiling"
+                        android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="93dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@drawable/plumpia"
+                            android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="93dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@drawable/pjamur"
+                            android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="93dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@drawable/pcapcai"
+                            android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="93dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@drawable/pbubur"
+                            android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shape_roundRect_bottomRightRadius="12dp"
+                        app:shape_roundRect_bottomLeftRadius="12dp"
+                        app:shape_roundRect_topRightRadius="12dp"
+                        app:shape_roundRect_topLeftRadius="12dp">
+                        <ImageView
+                            android:layout_width="173dp"
+                            android:layout_height="93dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/pbakmie"
+                            android:scaleType="fitXY" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
